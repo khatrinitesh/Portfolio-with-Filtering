@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Portfolio Filter</title>
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+	<ul class="portfolio_link">
+		<li class="filter" data-filter="all"><a href="#">All</a></li>
+		<li class="filter" data-filter="cities"><a href="#">Cities</a></li>
+		<li class="filter" data-filter="daylight"><a href="#">Daylight</a></li>
+		<li class="filter" data-filter="industrial"><a href="#">Industrial</a></li>
+		<li class="filter" data-filter="nature"><a href="#">Nature</a></li>
+		<li class="filter" data-filter="nightscape"><a href="#">Nightscape</a></li>
+	</ul>
+	<ul class="portfolio_filter">
+		<li class="item cities">
+			<a href="#">
+				<img src="img/cities_01.jpg" alt="">
+			</a>
+		</li>
+		<li class="item cities">
+			<a href="#">
+				<img src="img/cities_02.jpg" alt="">
+			</a>
+		</li>
+		<li class="item cities">
+			<a href="#">
+				<img src="img/cities_03.jpg" alt="">
+			</a>
+		</li>
+		<li class="item daylight">
+			<a href="#">
+				<img src="img/daylight_01.jpg" alt="">
+			</a>
+		</li>
+		<li class="item daylight">
+			<a href="#">
+				<img src="img/daylight_02.jpg" alt="">
+			</a>
+		</li>
+		<li class="item daylight">
+			<a href="#">
+				<img src="img/daylight_03.jpg" alt="">
+			</a>
+		</li>
+		<li class="item industrial">
+			<a href="#">
+				<img src="img/industrial_01.jpg" alt="">
+			</a>
+		</li>
+		<li class="item industrial">
+			<a href="#">
+				<img src="img/industrial_02.jpg" alt="">
+			</a>
+		</li>
+		<li class="item industrial">
+			<a href="#">
+				<img src="img/industrial_03.jpg" alt="">
+			</a>
+		</li>
+		<li class="item nature">
+			<a href="#">
+				<img src="img/nature_01.jpg" alt="">
+			</a>
+		</li>
+		<li class="item nature">
+			<a href="#">
+				<img src="img/nature_02.jpg" alt="">
+			</a>
+		</li>
+		<li class="item nature">
+			<a href="#">
+				<img src="img/nature_03.jpg" alt="">
+			</a>
+		</li>
+		<li class="item nightscape">
+			<a href="#">
+				<img src="img/nightscape_01.jpg" alt="">
+			</a>
+		</li>
+		<li class="item nightscape">
+			<a href="#">
+				<img src="img/nightscape_02.jpg" alt="">
+			</a>
+		</li>
+		<li class="item nightscape">
+			<a href="#">
+				<img src="img/nightscape_03.jpg" alt="">
+			</a>
+		</li>
+	</ul>
+	<script type="text/javascript" src='js/jquery-1.12.0.min.js'></script>
+	<script type="text/javascript" src='js/jquery.mixitup.min.js'></script>
+	<script type="text/javascript">
+			$('.portfolio_filter').mixitup({
+				showOnLoad: "nightscape",
+				targetSelector:'.item',
+				transitionSpeed:500
+			});	
+	</script>
+</body>
+</html>

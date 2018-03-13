@@ -1,0 +1,40 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ul 
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}  
+    
+ul li 
+{
+	display: inline-block;
+	position: relative;
+}     
+
+
+ul.portfolio_filter li 
+{
+	display: none;
+}
+
+ul.portfolio_link li a{
+	padding: 10px 20px;
+	display: block;
+	text-decoration: none;
+	outline: none;
+}
+
+ul.portfolio_link li.active a{
+	background-color: red;
+	color: #fff;
+}
